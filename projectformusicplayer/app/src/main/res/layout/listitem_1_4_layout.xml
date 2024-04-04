@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="140dp"
+            android:background="@drawable/item_1_4_background"
+            >
+            <ImageView
+                android:id="@+id/list_item_1_4_album"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_margin="10dp"
+                android:src="@drawable/music_bar_default_album_vector"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/list_item_1_4_songname"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="平凡之之之路之"
+                android:layout_below="@+id/list_item_1_4_album"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxEms="5"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:id="@+id/list_item_1_4_singername"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_item_1_4_songname"
+                android:hint="朴树"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxEms="5"
+                android:ellipsize="end"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

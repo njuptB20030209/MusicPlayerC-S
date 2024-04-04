@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_1_1_module_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:background="@android:color/transparent"
+        app:cardElevation="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            >
+            <ImageView
+                android:id="@+id/view_item_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:layout_margin="10dp"
+                android:src="@drawable/music_module_icon"
+                android:background="@android:color/transparent"
+                />
+            <TextView
+                android:id="@+id/list_item_1_1_module_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/view_item_img"
+                android:text="相似的人也在听"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
